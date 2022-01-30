@@ -17,7 +17,7 @@ public class GitStatisticService : IGitStatisticService
         return parsed.Item1 + parsed.Item2;
     }
 
-    private (int, int) ParseAddedAndDeleted(string input)
+    public static (int, int) ParseAddedAndDeleted(string input)
     {
         var addedKey = "added";
         var deletedKey = "deleted";
