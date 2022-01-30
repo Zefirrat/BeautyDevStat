@@ -1,4 +1,6 @@
 ﻿using System.Text.RegularExpressions;
+using System.Threading;
+using System.Threading.Tasks;
 using BeautyDevStat.Git.Interfaces;
 
 namespace BeautyDevStat.Git.Wrapper;

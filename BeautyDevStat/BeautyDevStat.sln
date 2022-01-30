@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyDevStat.Git.Wrapper",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyDevStat.Tests", "BeautyDevStat.Tests\BeautyDevStat.Tests.csproj", "{F827A775-0DF2-4290-BBDA-71F86AE19F2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyDevStat.Ui.Electron", "BeautyDevStat.Ui.Electron\BeautyDevStat.Ui.Electron.csproj", "{63FEDC5E-BD1A-45C8-B97C-A4FDA60FB812}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{F827A775-0DF2-4290-BBDA-71F86AE19F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F827A775-0DF2-4290-BBDA-71F86AE19F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F827A775-0DF2-4290-BBDA-71F86AE19F2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63FEDC5E-BD1A-45C8-B97C-A4FDA60FB812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63FEDC5E-BD1A-45C8-B97C-A4FDA60FB812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63FEDC5E-BD1A-45C8-B97C-A4FDA60FB812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63FEDC5E-BD1A-45C8-B97C-A4FDA60FB812}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
