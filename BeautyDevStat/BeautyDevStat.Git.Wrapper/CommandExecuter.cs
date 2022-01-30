@@ -9,7 +9,7 @@ public static class CommandExecuter
         return ExecuteCmdFromDirectoryAsync(command, string.Empty, cancellationToken);
     }
 
-    public static Task<string> ExecuteCmdFromDirectoryAsync(string command, string startupPath,
+    public static async Task<string> ExecuteCmdFromDirectoryAsync(string command, string startupPath,
         CancellationToken cancellationToken = default)
     {
         // source: https://stackoverflow.com/questions/1469764/run-command-prompt-commands
@@ -20,7 +20,8 @@ public static class CommandExecuter
             FileName = "cmd.exe",
             Arguments = $"/C {command}",
             // source: https://stackoverflow.com/questions/37694532/standardout-has-not-been-redirected-or-the-process-hasnt-started-yet-when-rea
-            RedirectStandardOutput = true
+            RedirectStandardOutput = true,
+            UseShellExecute = false
         };
 
         if (!string.IsNullOrEmpty(startupPath))
@@ -29,9 +30,10 @@ public static class CommandExecuter
         }
 
         process.StartInfo = startInfo;
+        
         process.Start();
 
-        var result = ReadOutput(process, cancellationToken);
+        var result = await ReadOutput(process, cancellationToken);
 
         return result;
     }
@@ -39,16 +41,25 @@ public static class CommandExecuter
     private static async Task<string> ReadOutput(Process process, CancellationToken cancellationToken = default)
     {
         var result = string.Empty;
-        while (!process.StandardOutput.EndOfStream)
+        
+        async Task AppendResult()
         {
-            if (cancellationToken.IsCancellationRequested)
-            {
-                return result;
-            }
-
-            result += await process.StandardOutput.ReadLineAsync();
+            result += await process.StandardOutput.ReadToEndAsync();
         }
 
+        if (cancellationToken.IsCancellationRequested)
+        {
+            return result;
+        }
+
+        await AppendResult();
+
+        while (!process.StandardOutput.EndOfStream)
+        {
+            await AppendResult();
+        }
+
+        await process.WaitForExitAsync(cancellationToken);
         return result;
     }
 }
