@@ -21,8 +21,7 @@ namespace BeautyDevStat.Ui.Electron
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseElectron(args); //This line is required  
-                    webBuilder.UseEnvironment("Development");
+                    webBuilder.UseElectron(args);
                     webBuilder.UseStartup<Startup>();
                 });
     }
