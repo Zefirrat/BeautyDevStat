@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="ElectronNET.API" Version="13.5.1" />
+    <PackageReference Include="Radzen.Blazor" Version="3.14.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="electron.manifest.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BeautyDevStat.BackgroundJob\BeautyDevStat.BackgroundJob.csproj" />
+    <ProjectReference Include="..\BeautyDevStat.Git.Interfaces\BeautyDevStat.Git.Interfaces.csproj" />
+    <ProjectReference Include="..\BeautyDevStat.Git.Wrapper\BeautyDevStat.Git.Wrapper.csproj" />
+  </ItemGroup>
+</Project>

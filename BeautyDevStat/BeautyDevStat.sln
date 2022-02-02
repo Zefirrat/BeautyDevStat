@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyDevStat", "BeautyDevStat\BeautyDevStat.csproj", "{FAB3789C-F10B-4C48-ACB9-B694CCA8285D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyDevStat.Git.Interfaces", "BeautyDevStat.Git.Interfaces\BeautyDevStat.Git.Interfaces.csproj", "{4FB40406-E3A0-491D-A803-F44440C0854F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyDevStat.Git.Wrapper", "BeautyDevStat.Git.Wrapper\BeautyDevStat.Git.Wrapper.csproj", "{4792A809-2221-4EC8-B40F-4885547BE73D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyDevStat.Tests", "BeautyDevStat.Tests\BeautyDevStat.Tests.csproj", "{F827A775-0DF2-4290-BBDA-71F86AE19F2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyDevStat.Ui.Electron", "BeautyDevStat.Ui.Electron\BeautyDevStat.Ui.Electron.csproj", "{5B1A4BCB-58AF-4296-ADF4-3EAD322DE53D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyDevStat.BackgroundJob", "BeautyDevStat.BackgroundJob\BeautyDevStat.BackgroundJob.csproj", "{BC99CFB4-ED42-4BA6-B019-3229EEBE4971}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAB3789C-F10B-4C48-ACB9-B694CCA8285D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB3789C-F10B-4C48-ACB9-B694CCA8285D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB3789C-F10B-4C48-ACB9-B694CCA8285D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB3789C-F10B-4C48-ACB9-B694CCA8285D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FB40406-E3A0-491D-A803-F44440C0854F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB40406-E3A0-491D-A803-F44440C0854F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB40406-E3A0-491D-A803-F44440C0854F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB40406-E3A0-491D-A803-F44440C0854F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4792A809-2221-4EC8-B40F-4885547BE73D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4792A809-2221-4EC8-B40F-4885547BE73D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4792A809-2221-4EC8-B40F-4885547BE73D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4792A809-2221-4EC8-B40F-4885547BE73D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F827A775-0DF2-4290-BBDA-71F86AE19F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F827A775-0DF2-4290-BBDA-71F86AE19F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F827A775-0DF2-4290-BBDA-71F86AE19F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F827A775-0DF2-4290-BBDA-71F86AE19F2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B1A4BCB-58AF-4296-ADF4-3EAD322DE53D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B1A4BCB-58AF-4296-ADF4-3EAD322DE53D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B1A4BCB-58AF-4296-ADF4-3EAD322DE53D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B1A4BCB-58AF-4296-ADF4-3EAD322DE53D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC99CFB4-ED42-4BA6-B019-3229EEBE4971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC99CFB4-ED42-4BA6-B019-3229EEBE4971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC99CFB4-ED42-4BA6-B019-3229EEBE4971}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC99CFB4-ED42-4BA6-B019-3229EEBE4971}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
