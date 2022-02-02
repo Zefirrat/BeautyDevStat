@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BeautyDevStat.Git.Interfaces;
+using BeautyDevStat.Git.Wrapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
@@ -29,6 +31,7 @@ namespace BeautyDevStat.Ui.Electron
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
+            services.AddTransient<IGitStatisticService, GitStatisticService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
